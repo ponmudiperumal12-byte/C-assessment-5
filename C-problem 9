@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int a,even, f, s, b;
+    for(a=5;a<50;a++)
+    { 
+       even=2*a;
+       f=even%10;
+       s=even/10;
+       b=f+s;
+       if(b==6)
+       {
+         printf("%d\n", even);
+       }
+    }
+}
