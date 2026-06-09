@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int a,odd, f, s, b;
+    for(a=5;a<50;a++)
+    { 
+       odd=2*a+1;
+       f=odd%10;
+       s=odd/10;
+       b=f+s;
+       if(b==7)
+       {
+         printf("%d\n", odd);
+       }
+    }
+}
