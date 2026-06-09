@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int a,odd,sum=0,s;
+    for(a=5;a<50;a++)
+    { 
+        odd =2*a+1;
+       sum=sum+odd;
+       s=(sum /10)%10;
+       if(s==7)
+       {
+         printf("%d\n", sum);
+       }
+    }
+}
