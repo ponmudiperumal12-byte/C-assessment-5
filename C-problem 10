@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int a,sum=0,f;
+    for(a=5;a<50;a++)
+    { 
+       sum=sum+a;
+       f=sum %10;
+       if(f==5)
+       {
+         printf("%d\n", sum);
+       }
+    }
+}
