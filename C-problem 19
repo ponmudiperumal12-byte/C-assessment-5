@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int n, t, i, count = 0;
+    printf ("enter the number:");
+    scanf("%d", &n);
+    t = n % 100;
+    for(i = 2; i < t; i++)
+    {
+        if(t % i == 0)
+        {
+            count++;
+        }
+    }
+    if(t> 1 && count == 0)
+        printf("Prime");
+    else
+        printf("Not Prime");
+}
