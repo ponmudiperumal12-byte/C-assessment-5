@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int a, t, count = 0;
+    printf ("enter the number:");
+    scanf("%d", &a);
+    for(a; a>= 10; a = a/ 10)
+    {
+        t = a% 100;
+
+        if(t % 2 != 0)
+        {
+            count++;
+        }
+    }
+    printf("%d", count);
+}
