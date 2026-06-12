@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int a, t, count = 0;
+    printf("enter the number:");
+    scanf("%d", &a);
+
+    for(a; a>= 10; a= a / 10)
+    {
+        t = a % 100;
+
+        if(t== 16 || t == 25 ||
+           t== 36 || t == 49 ||
+           t == 64 || t == 81)
+        {
+            count++;
+        }
+    }
+
+    printf("%d", count);
+}
